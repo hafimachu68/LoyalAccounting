@@ -1,0 +1,102 @@
+/* Thank You Page Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(135deg, #E8F9FD, #59CE8F);
+  color: #1e1e1e;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thankyou-container {
+  text-align: center;
+  background: #fff;
+  padding: 60px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 500px;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Logo Section */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.thankyou-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.logo-container h2 {
+  font-size: 20px;
+  color: #a4c639;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* Message Section */
+.thankyou-message h1 {
+  font-size: 36px;
+  color: #1e1e1e;
+  margin: 10px 0;
+}
+
+.thankyou-message p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.icon {
+  font-size: 60px;
+  color: #59CE8F;
+  margin-bottom: 20px;
+}
+
+/* Back Button */
+.back-btn {
+  display: inline-block;
+  background: #59CE8F;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #0a0a0a;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .thankyou-container {
+    padding: 40px 25px;
+  }
+
+  .thankyou-message h1 {
+    font-size: 30px;
+  }
+
+  .icon {
+    font-size: 50px;
+  }
+}
