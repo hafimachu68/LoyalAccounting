@@ -5,6 +5,10 @@ TemplateMo - Finance Business
 https://templatemo.com/tm-545-finance-business
 
 */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -169,7 +173,16 @@ a.border-button:hover {
   100% {
     opacity: 0;
   }
+}/* Logo style */
+#preloader .logo-container {
+  margin-bottom: 20px; /* Space between logo and jumper */
 }
+
+#preloader .preloader-logo {
+  width: 120px; /* Adjust as needed */
+  height: auto;
+}
+
 
 /* Sub Header Style */
 
@@ -1543,6 +1556,9 @@ footer .contact-form button.filled-button:hover {
 @media (max-width: 768px) {
 	.sub-header {
 		display: none;
+	}
+	.navbar-brand h2 {
+		font-size: 15px !important;
 	}
 	.Modern-Slider .item h6 {
 	  margin-bottom: 15px;
